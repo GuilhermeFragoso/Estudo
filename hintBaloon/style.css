@@ -1,0 +1,50 @@
+.help {
+  background-color: #f1efe6;
+  border: 1px solid #d3cdae;
+  font-size: 0.9em;
+  padding: 10px;
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.help::before {
+  border-color: transparent #d3cdae transparent transparent;
+  border-style: solid;
+  border-width: 14px;
+  content: "";
+  left: -28px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+}
+
+.tip {
+  width: 300px;
+  margin: 50px auto;
+}
+.tip::before {
+  content: "\261e";
+  margin-right: 10px;
+}
+
+blockquote {
+  width: 700px;
+  margin: 50px auto;
+  color: #444;
+  font-style: italic;
+}
+
+blockquote::before,
+blockquote::after {
+  color: #000;
+  font-size: 3em;
+}
+
+blockquote::before {
+  content: "\201c";
+}
+
+blockquote::after {
+  content: "\201d";
+}
